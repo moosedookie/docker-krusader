@@ -1,7 +1,7 @@
-FROM ich777/novnc-baseimage
+FROM jlesage/baseimage-gui:debian-12-v4
 
-LABEL org.opencontainers.image.authors="admin@minenet.at"
-LABEL org.opencontainers.image.source="https://github.com/ich777/docker-krusader"
+LABEL org.opencontainers.image.authors="moosedookie84@gmail.com"
+LABEL org.opencontainers.image.source="https://github.com/moosedookie/docker-krusader"
 
 RUN export TZ=Europe/Rome && \
 	echo "deb http://deb.debian.org/debian bookworm contrib non-free non-free-firmware" > /etc/apt/sources.list && \
